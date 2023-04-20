@@ -10,8 +10,8 @@ block content
     each item,index in results
       div(class="col-sm-2" onclick=`buy(${index})`)
         p author: #{item.author}
-        p price: #{item.price}
-        p publishedyear: $#{item.publishedyear}
+        p price: $#{item.price}
+        p publishedyear: #{item.publishedyear}
   script.
     function buy(index)
     {
